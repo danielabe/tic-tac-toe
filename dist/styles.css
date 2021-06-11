@@ -1,0 +1,11 @@
+.board {
+  display: grid;
+  grid-template: repeat(3, 1fr)/33% 33% 33%;
+  width: 80vmin;
+  height: 80vmin;
+}
+
+.cell {
+  border: 1px solid white;
+  background: #36368b;
+}
