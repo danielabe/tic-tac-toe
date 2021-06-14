@@ -18,6 +18,13 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   border: 1px solid white;
-  background: #36368b;
+  background: #6bc547;
+  /*  background: rgb(86, 155, 59); */
+  /* background: rgb(78, 139, 54); */
+  /* background: rgb(54, 54, 139); */
+}
+
+.card {
+  width: 45%;
 }
 /*# sourceMappingURL=styles.css.map */

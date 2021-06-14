@@ -1,7 +1,7 @@
 const button = document.getElementById('button')
 const cells = document.querySelectorAll('.cell')
 
-let icon = '<i class="fas fa-rocket"></i>'
+let icon = '<img class="card" src="styles/images/lady-beetle.png" alt="">'
 let turn = 'first'
 
 button.addEventListener('click', () => startGame())
@@ -22,10 +22,10 @@ cells.forEach(cell => cell.addEventListener('click', () => {
 
 function turnFunction() {
     if(turn === 'first') {
-        icon = '<i class="fas fa-rocket"></i>'
+        icon = '<img class="card" src="styles/images/lady-beetle.png" alt="">'
         turn = 'second'
     } else if (turn === 'second') {
-        icon = '<i class="fas fa-meteor"></i>'
+        icon = '<img class="card" src="styles/images/flower.png" alt="">'
         turn = 'first'
     }
 }
