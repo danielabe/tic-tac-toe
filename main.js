@@ -1,4 +1,4 @@
-const button = document.getElementById('button')
+const button = document.getElementById('button') //no usado
 const cells = document.querySelectorAll('.cell')
 const c1 = document.getElementById('c1')
 const c2 = document.getElementById('c2')
@@ -10,12 +10,13 @@ const c7 = document.getElementById('c7')
 const c8 = document.getElementById('c8')
 const c9 = document.getElementById('c9')
 const dkImg = document.getElementById('dkImg')
-const modal = document.getElementById('modal')
+const modal = document.getElementById('modal') //no usado
+const winnerMsg = document.getElementById('winnerMsg')
 
 let icon = '<img class="card" src="styles/images/lady-beetle.png" alt="">'
 let turn = 'first'
 
-button.addEventListener('click', () => startGame())
+/* button.addEventListener('click', () => startGame()) */
 
 function startGame() {
     console.log('dani')
@@ -74,5 +75,5 @@ function checkWinner(winner) {
 function endGame(winner) {
     console.log('ganaste ' + winner)
     dkImg.classList.remove('none')
-    modal.innerText = winner + ' you win'
+    winnerMsg.innerText = winner + ' you win'
 }

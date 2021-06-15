@@ -16,8 +16,8 @@
 <body>
     <header></header>
     <main>
-        <button id="button">Start the game</button>
-        <section>
+        <!-- <button id="button">Start the game</button> -->
+        <section class="game">
             <div id="board" class="board">
                 <div id="c1" class="cell"></div>
                 <div id="c2" class="cell"></div>
@@ -30,7 +30,12 @@
                 <div id="c9" class="cell"></div>
             </div>
             <div id="dkImg" class="dark-image none">
-                <div id="modal" class="modal"></div>
+                <div id="modal" class="modal">
+                    <p id="winnerMsg" class="winner-msg"></p>
+                    <img class="trophy" src="styles/images/trophy.png" alt="">
+                    <button class="btn">Play again <i class="fas fa-gamepad"></i></button>
+                    <button class="btn">Home <i class="fas fa-home"></i></button>
+                </div>
             </div>
         </section>
     </main>
