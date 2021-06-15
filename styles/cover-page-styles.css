@@ -41,6 +41,7 @@ main {
 }
 
 .title {
+  height: 102px;
   font-size: 40px;
   text-align: center;
   color: #BECA5C;
@@ -52,7 +53,29 @@ main {
   border: none;
   border-radius: 16px;
   background: #CC561E;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   color: #EF8D32;
+}
+
+.start:active {
+  background: #EF8D32;
+  color: #CC561E;
+}
+
+.select-title {
+  color: #BECA5C;
+}
+
+.themes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+  -ms-grid-columns: 50% 50%;
+      grid-template: repeat(2, 1fr)/50% 50%;
+  grid-gap: 5px;
+  width: 80vmin;
+  height: 80vmin;
 }
 
 .none {

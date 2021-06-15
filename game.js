@@ -1,4 +1,3 @@
-const button = document.getElementById('button') //no usado
 const cells = document.querySelectorAll('.cell')
 const c1 = document.getElementById('c1')
 const c2 = document.getElementById('c2')
@@ -12,13 +11,10 @@ const c9 = document.getElementById('c9')
 const dkImg = document.getElementById('dkImg')
 const modal = document.getElementById('modal') //no usado
 const winnerMsg = document.getElementById('winnerMsg')
+const btnHomeGame = document.getElementById('btnHomeGame')
 
 let icon = '<img class="card" src="styles/images/lady-beetle.png" alt="">'
 let turn = 'first'
-
-function startGame() {
-    console.log('dani')
-}
 
 cells.forEach(cell => cell.addEventListener('click', () => {
     if(cell.innerHTML === '') {
@@ -73,3 +69,10 @@ function endGame(winner) {
     dkImg.classList.remove('none')
     winnerMsg.innerText = winner + ' you win'
 }
+
+btnHomeGame.addEventListener('click', () => {
+    console.log('home')
+    coverPage.classList.remove('none')
+    game.classList.add('none')
+    linkGame.remove()
+})
