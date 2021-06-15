@@ -131,13 +131,34 @@ main {
 }
 
 .btns-game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: absolute;
   bottom: 10px;
   width: 95%;
 }
 
 .btn-game {
-  height: 30px;
+  width: 49%;
+  height: 34px;
+  border-radius: 16px;
+  border: none;
+  background: #ffdd00;
+  background: #ffdd00;
+  background: linear-gradient(3deg, #ffdd00 0%, #ffe95a 50%, #ffdd00 100%);
+  background: #ffd500;
+  background: linear-gradient(3deg, #ffd500 0%, #ffe200 50%, #ffd500 100%);
+  color: #fbb034;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn-game:hover {
+  cursor: pointer;
 }
 
 .none {

@@ -100,13 +100,28 @@ main {
 }
 
 .btns-game {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     bottom: 10px;
     width: 95%;
 }
 
 .btn-game {
-    height: 30px;
+    width: 49%;
+    height: 34px;
+    border-radius: 16px;
+    border: none;
+    background: #ffdd00;
+    background: rgb(255,221,0);
+    background: linear-gradient(3deg, rgba(255,221,0,1) 0%, rgba(255,233,90,1) 50%, rgba(255,221,0,1) 100%);
+    background: rgb(255,213,0);
+    background: linear-gradient(3deg, rgba(255,213,0,1) 0%, rgba(255,226,0,1) 50%, rgba(255,213,0,1) 100%);
+    color: #fbb034;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .none {
