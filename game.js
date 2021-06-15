@@ -16,13 +16,9 @@ const winnerMsg = document.getElementById('winnerMsg')
 let icon = '<img class="card" src="styles/images/lady-beetle.png" alt="">'
 let turn = 'first'
 
-/* button.addEventListener('click', () => startGame()) */
-
 function startGame() {
     console.log('dani')
 }
-
-console.log(cells)
 
 cells.forEach(cell => cell.addEventListener('click', () => {
     if(cell.innerHTML === '') {
