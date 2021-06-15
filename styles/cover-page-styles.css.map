@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,EAAE,IAAI,EAAE,IAAI,CAAC;EACV,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,uBAAuB;CACvC;;AAED,AAAA,KAAK,CAAC;EACF,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "cover-page-styles.scss"
+    ],
+    "names": [],
+    "file": "cover-page-styles.css"
+}

@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/1a1435afa6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/styles.css">
     <title>Tic Tac Toe</title>
-
+    
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest"> -->
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest"> -->
+    <link rel="stylesheet" href="styles/cover-page-styles.css">
 </head>
 <body>
     <header></header>
     <main>
-        <!-- <button id="button">Start the game</button> -->
-        <section class="game">
+        <section id="coverPage" class="cover-page">
+            <h1>Tic-Tac-Toe</h1>
+            <button id="start" class="start">Start</button>
+        </section>
+        <section id="game" class="game none">
             <div id="board" class="board">
                 <div id="c1" class="cell"></div>
                 <div id="c2" class="cell"></div>
@@ -44,5 +47,6 @@
         </section>
     </main>
     <script src="main.js"></script>
+    <script src="game.js"></script>
 </body>
 </html>

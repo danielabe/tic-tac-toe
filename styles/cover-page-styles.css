@@ -1,0 +1,13 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.none {
+  display: none;
+}
+/*# sourceMappingURL=cover-page-styles.css.map */
