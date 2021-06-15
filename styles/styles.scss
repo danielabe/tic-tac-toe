@@ -10,7 +10,8 @@
 
 .board {
     display: grid;
-    grid-template: repeat(3, 1fr)/33% 33% 33%;
+    grid-template: repeat(3, 1fr)/33.33% 33.33% 33.33%;
+    grid-gap: 5px;
     width: 80vmin;
     height: 80vmin;
 }
@@ -19,8 +20,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: 1px solid white;
-    background: rgb(107, 197, 71);
+    /* border: 1px solid #d9e0a1; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #6bc547;
+    background: rgb(105,208,92);
+background: linear-gradient(135deg, rgba(105,208,92,1) 0%, rgba(107,197,71,1) 50%, rgba(76,182,52,1) 100%);
    /*  background: rgb(86, 155, 59); */
     /* background: rgb(78, 139, 54); */
     /* background: rgb(54, 54, 139); */
@@ -56,22 +60,25 @@ main {
     display: flex;
     align-items: center;
     height: 100vh;
-    background: grey;
+    background: #5ea242;
+    background: rgb(100,173,70);
+    background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%);
 }
 
 .game {
     display: flex;
     justify-content: space-around;
-    background: gray;
+    background: #5ea242;
+    background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%);
 }
 
-.btn {
+.btn-modal {
     width: 95%;
     height: 30px;
     margin-bottom: 5px;
     border: none;
     border-radius: 4px;
-    background: rgb(121, 58, 204);
+    background: #793acc;
     &:hover {
         cursor: pointer;
     }
@@ -90,6 +97,16 @@ main {
 .trophy {
     width: 50px;
     margin-bottom: 10px;
+}
+
+.btns-game {
+    position: absolute;
+    bottom: 10px;
+    width: 95%;
+}
+
+.btn-game {
+    height: 30px;
 }
 
 .none {
