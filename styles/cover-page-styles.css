@@ -94,7 +94,14 @@ main {
 }
 
 .img-theme {
-  width: 70%;
+  width: 75%;
+  border: 6px solid white;
+  opacity: 0.7;
+}
+
+.selected-theme {
+  outline: 1.3px solid #af9c9c;
+  opacity: 0.9;
 }
 
 .play {

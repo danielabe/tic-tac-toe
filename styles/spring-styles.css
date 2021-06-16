@@ -29,15 +29,11 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  /* border: 1px solid #d9e0a1; */
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background: #6bc547;
   background: #69d05c;
   background: linear-gradient(135deg, #69d05c 0%, #6bc547 50%, #4cb634 100%);
-  /*  background: rgb(86, 155, 59); */
-  /* background: rgb(78, 139, 54); */
-  /* background: rgb(54, 54, 139); */
 }
 
 .card {
@@ -45,9 +41,6 @@
 }
 
 .dark-image {
-  /* display: flex;
-    flex-direction: column;
-    align-items: center; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,17 +138,11 @@ main {
   border-radius: 16px;
   font-family: 'Bungee', cursive;
   border: none;
-  background: #ffdd00;
-  background: #ffdd00;
-  background: linear-gradient(3deg, #ffdd00 0%, #ffe95a 50%, #ffdd00 100%);
   background: #ffd500;
   background: linear-gradient(3deg, #ffd500 0%, #ffe200 50%, #ffd500 100%);
   color: #fbb034;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /* &:hover {
-        cursor: pointer;
-    } */
 }
 
 .btn-game:active {
@@ -166,4 +153,4 @@ main {
 .none {
   display: none;
 }
-/*# sourceMappingURL=game-styles.css.map */
+/*# sourceMappingURL=spring-styles.css.map */

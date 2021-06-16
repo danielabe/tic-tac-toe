@@ -9,7 +9,6 @@ const c7 = document.getElementById('c7')
 const c8 = document.getElementById('c8')
 const c9 = document.getElementById('c9')
 const dkImg = document.getElementById('dkImg')
-const modal = document.getElementById('modal') //no usado
 const winnerMsg = document.getElementById('winnerMsg')
 const btnHomeGame = document.getElementById('btnHomeGame')
 
@@ -75,4 +74,5 @@ btnHomeGame.addEventListener('click', () => {
     coverPage.classList.remove('none')
     game.classList.add('none')
     linkGame.remove()
+    play.disabled = true
 })
