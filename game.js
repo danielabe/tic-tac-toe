@@ -12,13 +12,15 @@ const dkImg = document.getElementById('dkImg')
 const winnerMsg = document.getElementById('winnerMsg')
 const btnHomeGame = document.getElementById('btnHomeGame')
 
-let icon = '<img class="card" src="styles/images/lady-beetle.png" alt="">'
+let icon /* = '<img class="card" src="styles/images/lady-beetle.png" alt="">' */
 let turn = 'first'
+
+
 
 cells.forEach(cell => cell.addEventListener('click', () => {
     if(cell.innerHTML === '') {
         let winner = turn
-        turnFunction()
+        turnFunction(firstCard, secondCard)
         cell.innerHTML = icon
         checkWinner(winner)
     }
@@ -26,12 +28,13 @@ cells.forEach(cell => cell.addEventListener('click', () => {
     
 }))
 
-function turnFunction() {
+function turnFunction(firstCard, secondCard) {
     if(turn === 'first') {
-        icon = '<img class="card" src="styles/images/lady-beetle.png" alt="">'
+        icon = firstCard
+        /* icon = '<img class="card" src="styles/images/lady-beetle.png" alt="">' */
         turn = 'second'
     } else if (turn === 'second') {
-        icon = '<img class="card" src="styles/images/flower.png" alt="">'
+        icon = secondCard
         turn = 'first'
     }
 }

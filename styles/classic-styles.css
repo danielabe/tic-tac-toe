@@ -31,9 +31,10 @@
       justify-content: space-around;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: #6bc547;
-  background: #69d05c;
-  background: linear-gradient(135deg, #69d05c 0%, #6bc547 50%, #4cb634 100%);
+  background: #fff8f0;
+  background: #fefbf7;
+  background: linear-gradient(135deg, #fefbf7 0%, #fff8f0 50%, #fcf3e8 100%);
+  /* background: linear-gradient(135deg, rgba(105,208,92,1) 0%, rgba(107,197,71,1) 50%, rgba(76,182,52,1) 100%); */
 }
 
 .card {
@@ -79,9 +80,10 @@ main {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background: #5ea242;
-  background: #64ad46;
-  background: linear-gradient(135deg, #64ad46 0%, #5ea242 50%, #57963d 100%);
+  background: #fff8f0;
+  /* background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%); */
+  background-image: url("./images/classic-pattern.png");
+  background-size: 58px;
 }
 
 .game {
@@ -90,9 +92,8 @@ main {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: #5ea242;
-  background: linear-gradient(135deg, #64ad46 0%, #5ea242 50%, #57963d 100%);
   background: transparent;
+  /* background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%); */
 }
 
 .btn-modal {
@@ -139,19 +140,28 @@ main {
   border-radius: 16px;
   font-family: 'Bungee', cursive;
   border: none;
-  background: #ffd500;
-  background: linear-gradient(3deg, #ffd500 0%, #ffe200 50%, #ffd500 100%);
-  color: #fbb034;
+  background: #CC561E;
+  color: #EF8D32;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .btn-game:active {
-  background: #fbb034;
-  color: #ffd500;
+  background: #EF8D32;
+  color: #CC561E;
 }
 
+.fa-times {
+  font-size: 50px;
+  color: #BECA5C;
+}
+
+/* .fa-circle {
+    width: min-content;
+    font-size: 40px;
+    color: #CC561E;
+} */
 .none {
   display: none;
 }
-/*# sourceMappingURL=spring-styles.css.map */
+/*# sourceMappingURL=classic-styles.css.map */

@@ -22,9 +22,10 @@
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background: #6bc547;
-    background: rgb(105,208,92);
-    background: linear-gradient(135deg, rgba(105,208,92,1) 0%, rgba(107,197,71,1) 50%, rgba(76,182,52,1) 100%);
+    background: #fff8f0;
+    background: rgb(254,251,247);
+    background: linear-gradient(135deg, rgba(254,251,247,1) 0%, rgba(255,248,240,1) 50%, rgba(252,243,232,1) 100%);
+    /* background: linear-gradient(135deg, rgba(105,208,92,1) 0%, rgba(107,197,71,1) 50%, rgba(76,182,52,1) 100%); */
 }
 
 .card {
@@ -54,17 +55,17 @@ main {
     display: flex;
     align-items: center;
     height: 100vh;
-    background: #5ea242;
-    background: rgb(100,173,70);
-    background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%);
+    background: #fff8f0;
+    /* background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%); */
+    background-image: url('./images/classic-pattern.png');
+    background-size: 58px;
 }
 
 .game {
     display: flex;
     justify-content: space-around;
-    background: #5ea242;
-    background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%);
     background: transparent;
+    /* background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%); */
 }
 
 .btn-modal {
@@ -105,15 +106,25 @@ main {
     border-radius: 16px;
     font-family: 'Bungee', cursive;
     border: none;
-    background: rgb(255,213,0);
-    background: linear-gradient(3deg, rgba(255,213,0,1) 0%, rgba(255,226,0,1) 50%, rgba(255,213,0,1) 100%);
-    color: #fbb034;
+    background: #CC561E;
+    color: #EF8D32;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     &:active {
-        background: #fbb034;
-        color: rgb(255,213,0);
+        background: #EF8D32;
+        color: #CC561E;
     }
 }
+
+.fa-times {
+    font-size: 50px;
+    color: #BECA5C;
+}
+
+/* .fa-circle {
+    width: min-content;
+    font-size: 40px;
+    color: #CC561E;
+} */
 
 .none {
     display: none;
