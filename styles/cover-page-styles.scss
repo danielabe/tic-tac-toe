@@ -46,18 +46,43 @@ main {
 }
 
 //select
+.select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
 .select-title {
+    margin: 20px 0;
+    text-align: center;
     color: #BECA5C;
 }
 
 .themes {
     display: grid;
-    grid-template: repeat(2, 1fr)/50% 50%;
-    grid-gap: 5px;
+    grid-template: 70% 70%/0.5fr 0.5fr;
+    /* grid-row-gap: 10%; */
     width: 80vmin;
-    height: 80vmin;
+}
+
+.img-theme {
+    width: 70%;
+}
+
+.play {
+    position: absolute;
+    bottom: 25px;
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .none {
     display: none;
 }
+
+//https://colorhunt.co/palette/aa2b1dcc561eef8d32beca5c

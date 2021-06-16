@@ -9,12 +9,8 @@ const linkGame = document.createElement('link')
 linkGame.innerHTML = `<link rel="stylesheet" href="styles/game-styles.css">`
 
 start.addEventListener('click', () => {
-    /* coverPage.classList.add('none')
-    game.classList.remove('none')
-    head.appendChild(linkGame) */
     coverPage.classList.add('none')
     select.classList.remove('none')
-    /* head.appendChild(linkGame) */
 })
 
 play.addEventListener('click', () => {
