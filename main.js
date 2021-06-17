@@ -34,9 +34,8 @@ themes.forEach(th => th.addEventListener('click', () => {
 function linkGameFunction(link) {
     if(link === 'classic') {
         linkGame.innerHTML = `<link rel="stylesheet" href="styles/classic-styles.css">`
-        firstCard = '<i class="fas fa-times"></i>'
+        firstCard = '<img class="card cross" src="styles/images/cross.svg" alt="">'
         secondCard = '<img class="card" src="styles/images/trip_origin.svg" alt="">'
-        
     }
     if(link === 'spring') {
         linkGame.innerHTML = `<link rel="stylesheet" href="styles/spring-styles.css">`
@@ -52,7 +51,6 @@ function linkGameFunction(link) {
 
 }
 
-
 function deselect() {
     imgClassic.classList.remove('selected-theme')
     imgSpring.classList.remove('selected-theme')
@@ -62,7 +60,7 @@ function deselect() {
 
 function themeSelection(selectedTheme) {
     if(selectedTheme !== null) play.disabled = false
-    selectedTheme.childNodes[0].classList.add('selected-theme')
+    selectedTheme.childNodes[1].classList.add('selected-theme')
 }
 
 play.addEventListener('click', () => {

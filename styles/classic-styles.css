@@ -34,7 +34,6 @@
   background: #fff8f0;
   background: #fefbf7;
   background: linear-gradient(135deg, #fefbf7 0%, #fff8f0 50%, #fcf3e8 100%);
-  /* background: linear-gradient(135deg, rgba(105,208,92,1) 0%, rgba(107,197,71,1) 50%, rgba(76,182,52,1) 100%); */
 }
 
 .card {
@@ -81,7 +80,6 @@ main {
           align-items: center;
   height: 100vh;
   background: #fff8f0;
-  /* background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%); */
   background-image: url("./images/classic-pattern.png");
   background-size: 58px;
 }
@@ -93,7 +91,6 @@ main {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background: transparent;
-  /* background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%); */
 }
 
 .btn-modal {
@@ -151,16 +148,10 @@ main {
   color: #CC561E;
 }
 
-.fa-times {
-  font-size: 50px;
-  color: #BECA5C;
+.cross {
+  width: 37%;
 }
 
-/* .fa-circle {
-    width: min-content;
-    font-size: 40px;
-    color: #CC561E;
-} */
 .none {
   display: none;
 }

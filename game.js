@@ -12,26 +12,26 @@ const dkImg = document.getElementById('dkImg')
 const winnerMsg = document.getElementById('winnerMsg')
 const btnHomeGame = document.getElementById('btnHomeGame')
 
-let icon /* = '<img class="card" src="styles/images/lady-beetle.png" alt="">' */
+let icon
 let turn = 'first'
-
-
+let winner
 
 cells.forEach(cell => cell.addEventListener('click', () => {
     if(cell.innerHTML === '') {
-        let winner = turn
-        turnFunction(firstCard, secondCard)
+        winner = turn
+        turnFunction(firstCard, secondCard, winner)
         cell.innerHTML = icon
+        console.log(winner)
         checkWinner(winner)
     }
     console.log(turn + ' es tu turno')
     
 }))
 
-function turnFunction(firstCard, secondCard) {
+function turnFunction(firstCard, secondCard, winner) {
+    console.log(winner)
     if(turn === 'first') {
         icon = firstCard
-        /* icon = '<img class="card" src="styles/images/lady-beetle.png" alt="">' */
         turn = 'second'
     } else if (turn === 'second') {
         icon = secondCard
@@ -41,7 +41,7 @@ function turnFunction(firstCard, secondCard) {
 
 function checkWinner(winner) {
     if(c1.innerHTML === c2.innerHTML && c1.innerHTML === c3.innerHTML && c1.innerHTML !== '') {
-        endGame(winner)
+        endGame(winner) 
     }
     if(c4.innerHTML === c5.innerHTML && c4.innerHTML === c6.innerHTML && c4.innerHTML !== '') {
         endGame(winner)
@@ -67,15 +67,14 @@ function checkWinner(winner) {
 }
 
 function endGame(winner) {
-    console.log('ganaste ' + winner)
     dkImg.classList.remove('none')
     winnerMsg.innerText = winner + ' you win'
 }
 
 btnHomeGame.addEventListener('click', () => {
-    console.log('home')
     coverPage.classList.remove('none')
     game.classList.add('none')
     linkGame.remove()
     play.disabled = true
+    turn = 'first'
 })
