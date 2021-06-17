@@ -22,8 +22,6 @@
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background: #6bc547;
-    background: rgb(105,208,92);
     background: linear-gradient(135deg, rgba(105,208,92,1) 0%, rgba(107,197,71,1) 50%, rgba(76,182,52,1) 100%);
 }
 
@@ -54,15 +52,15 @@ main {
     display: flex;
     align-items: center;
     height: 100vh;
-    background: #5ea242;
-    background: rgb(100,173,70);
     background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%);
 }
 
 .game {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    background: #5ea242;
+    padding: 0 0 50px 0;
     background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%);
     background: transparent;
 }
@@ -95,7 +93,7 @@ main {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 25px;
+    bottom: 60px;
     width: 95%;
 }
 
@@ -105,13 +103,25 @@ main {
     border-radius: 16px;
     font-family: 'Bungee', cursive;
     border: none;
-    background: rgb(255,213,0);
     background: linear-gradient(3deg, rgba(255,213,0,1) 0%, rgba(255,226,0,1) 50%, rgba(255,213,0,1) 100%);
     color: #fbb034;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     &:active {
         background: #fbb034;
         color: rgb(255,213,0);
+    }
+}
+
+.retributions {
+    width: 95%;
+    position: absolute;
+    bottom: 4px;
+    text-align: center;
+    font-size: 10px;
+    color: #fff8f0;
+    a {
+        text-decoration: none;
+        color: #fff8f0;
     }
 }
 

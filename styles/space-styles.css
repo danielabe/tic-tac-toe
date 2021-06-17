@@ -29,9 +29,10 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  z-index: 2;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, #fefbf7 0%, #fff8f0 50%, #fcf3e8 100%);
+  background: linear-gradient(135deg, #4e0098 0%, #1c0071 50%, #150057 100%);
 }
 
 .card {
@@ -50,6 +51,7 @@
   position: absolute;
   top: 0;
   height: 100vh;
+  z-index: 3;
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -77,9 +79,9 @@ main {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background: #fff8f0;
-  background-image: url("./images/classic-pattern.png");
-  background-size: 58px;
+  background: linear-gradient(135deg, #4e0098 0%, #1c0071 50%, #150057 100%);
+  background-image: url("./images/space-img.jpg");
+  background-size: 100%;
 }
 
 .game {
@@ -95,6 +97,8 @@ main {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0 0 50px 0;
+  background: linear-gradient(135deg, #64ad46 0%, #5ea242 50%, #57963d 100%);
   background: transparent;
 }
 
@@ -132,8 +136,9 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
-  bottom: 25px;
+  bottom: 60px;
   width: 95%;
+  z-index: 2;
 }
 
 .btn-game {
@@ -142,22 +147,42 @@ main {
   border-radius: 16px;
   font-family: 'Bungee', cursive;
   border: none;
-  background: #CC561E;
-  color: #EF8D32;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left bottom, left top, from(#c7bcd0), color-stop(50%, #c2bacb), to(#ada1b8));
+  background: linear-gradient(0deg, #c7bcd0 0%, #c2bacb 50%, #ada1b8 100%);
+  color: #3d0454;
 }
 
 .btn-game:active {
-  background: #EF8D32;
-  color: #CC561E;
+  background: #fbb034;
+  color: #ffd500;
 }
 
-.cross {
-  width: 37%;
+.retributions {
+  width: 95%;
+  position: absolute;
+  bottom: 4px;
+  text-align: center;
+  font-size: 10px;
+  color: #fff8f0;
+}
+
+.retributions a {
+  text-decoration: none;
+  color: #fff8f0;
+}
+
+.violet {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  background: linear-gradient(135deg, rgba(78, 0, 152, 0.6) 0%, rgba(28, 0, 113, 0.6) 50%, rgba(21, 0, 87, 0.6) 100%);
 }
 
 .none {
   display: none;
 }
-/*# sourceMappingURL=classic-styles.css.map */
+/*# sourceMappingURL=space-styles.css.map */

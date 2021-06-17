@@ -89,14 +89,13 @@ main {
   -ms-grid-rows: 55% 55%;
   -ms-grid-columns: 0.5fr 0.5fr;
       grid-template: 55% 55%/0.5fr 0.5fr;
-  /* grid-row-gap: 10%; */
   width: 80vmin;
 }
 
 .img-theme {
   width: 75%;
   border: 6px solid #fff8f0;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .selected-theme {

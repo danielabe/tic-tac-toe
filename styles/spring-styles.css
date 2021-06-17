@@ -31,8 +31,6 @@
       justify-content: space-around;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: #6bc547;
-  background: #69d05c;
   background: linear-gradient(135deg, #69d05c 0%, #6bc547 50%, #4cb634 100%);
 }
 
@@ -79,8 +77,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background: #5ea242;
-  background: #64ad46;
   background: linear-gradient(135deg, #64ad46 0%, #5ea242 50%, #57963d 100%);
 }
 
@@ -88,9 +84,16 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: #5ea242;
+  padding: 0 0 50px 0;
   background: linear-gradient(135deg, #64ad46 0%, #5ea242 50%, #57963d 100%);
   background: transparent;
 }
@@ -129,7 +132,7 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: absolute;
-  bottom: 25px;
+  bottom: 60px;
   width: 95%;
 }
 
@@ -139,7 +142,6 @@ main {
   border-radius: 16px;
   font-family: 'Bungee', cursive;
   border: none;
-  background: #ffd500;
   background: linear-gradient(3deg, #ffd500 0%, #ffe200 50%, #ffd500 100%);
   color: #fbb034;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -149,6 +151,20 @@ main {
 .btn-game:active {
   background: #fbb034;
   color: #ffd500;
+}
+
+.retributions {
+  width: 95%;
+  position: absolute;
+  bottom: 4px;
+  text-align: center;
+  font-size: 10px;
+  color: #fff8f0;
+}
+
+.retributions a {
+  text-decoration: none;
+  color: #fff8f0;
 }
 
 .none {
