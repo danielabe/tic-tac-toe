@@ -9,6 +9,7 @@ const imgSpace = document.getElementById('imgSpace')
 const imgOther = document.getElementById('imgOther')
 const springRetributions = document.getElementById('springRetributions')
 const spaceRetributions = document.getElementById('spaceRetributions')
+const backSapce = document.getElementById('backSapce')
 
 const head = document.querySelector('head')
 const themes = document.querySelectorAll('.theme')
@@ -40,6 +41,7 @@ function linkGameFunction(link) {
         secondCard = '<img class="card" src="styles/images/trip_origin.svg" alt="">'
         springRetributions.classList.add('none')
         spaceRetributions.classList.add('none')
+        backSapce.classList.add('none')
     }
     if(link === 'spring') {
         linkGame.innerHTML = `<link rel="stylesheet" href="styles/spring-styles.css">`
@@ -47,18 +49,21 @@ function linkGameFunction(link) {
         secondCard = '<img class="card" src="styles/images/sakura.png" alt="">'
         springRetributions.classList.remove('none')
         spaceRetributions.classList.add('none')
+        backSapce.classList.add('none')
     }
     if(link === 'space') {
         linkGame.innerHTML = `<link rel="stylesheet" href="styles/space-styles.css">`
         firstCard = '<img class="card" src="styles/images/lanzadera.png" alt="">'
         secondCard = '<img class="card" src="styles/images/saturno.png" alt="">'
         spaceRetributions.classList.remove('none')
+        backSapce.classList.remove('none')
         springRetributions.classList.add('none')
     }
     if(link === 'other') {
         linkGame.innerHTML = `<link rel="stylesheet" href="styles/other-styles.css">`
         springRetributions.classList.add('none')
         spaceRetributions.classList.add('none')
+        backSapce.classList.add('none')
     }
 
 }
