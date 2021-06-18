@@ -29,10 +29,10 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  z-index: 2;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, #4e0098 0%, #1c0071 50%, #150057 100%);
+  background: #f28e1e;
+  background: linear-gradient(135deg, #f28e1e 0%, #ef8610 50%, #da7708 100%);
 }
 
 .card {
@@ -51,7 +51,6 @@
   position: absolute;
   top: 0;
   height: 100vh;
-  z-index: 3;
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -79,9 +78,9 @@ main {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  /* background: linear-gradient(135deg, rgba(78,0,152,1) 0%, rgba(28,0,113,1) 50%, rgba(21,0,87,1) 100%);
-    background-image: url('./images/space-img.jpg');
-    background-size: 100%; */
+  background: #fff8f0;
+  background-image: url("./images/halloween-pattern.PNG");
+  background-size: 58px;
 }
 
 .game {
@@ -98,7 +97,6 @@ main {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 0 0 50px 0;
-  background: linear-gradient(135deg, #64ad46 0%, #5ea242 50%, #57963d 100%);
   background: transparent;
 }
 
@@ -138,7 +136,6 @@ main {
   position: absolute;
   bottom: 60px;
   width: 95%;
-  z-index: 2;
 }
 
 .btn-game {
@@ -147,16 +144,15 @@ main {
   border-radius: 16px;
   font-family: 'Bungee', cursive;
   border: none;
+  background: #CC561E;
+  color: #EF8D32;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background: -webkit-gradient(linear, left bottom, left top, from(#c7bcd0), color-stop(50%, #c2bacb), to(#ada1b8));
-  background: linear-gradient(0deg, #c7bcd0 0%, #c2bacb 50%, #ada1b8 100%);
-  color: #3d0454;
 }
 
 .btn-game:active {
-  background: #fbb034;
-  color: #ffd500;
+  background: #EF8D32;
+  color: #CC561E;
 }
 
 .retributions {
@@ -174,28 +170,7 @@ main {
   color: #fff8f0;
 }
 
-.violet {
-  width: 100vmin;
-  height: 100vmax;
-  position: absolute;
-  top: 0px;
-  z-index: 1;
-  background: linear-gradient(135deg, rgba(78, 0, 152, 0.6) 0%, rgba(28, 0, 113, 0.6) 50%, rgba(21, 0, 87, 0.6) 100%);
-}
-
-.back-space {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0px;
-}
-
-.space-img {
-  width: 100vmin;
-  height: 100vmax;
-}
-
 .none {
   display: none;
 }
-/*# sourceMappingURL=space-styles.css.map */
+/*# sourceMappingURL=halloween-styles.css.map */

@@ -6,9 +6,10 @@ const play = document.getElementById('play')
 const imgClassic = document.getElementById('imgClassic')
 const imgSpring = document.getElementById('imgSpring')
 const imgSpace = document.getElementById('imgSpace')
-const imgOther = document.getElementById('imgOther')
+const imgHalloween = document.getElementById('imgHalloween')
 const springRetributions = document.getElementById('springRetributions')
 const spaceRetributions = document.getElementById('spaceRetributions')
+const halloweenRetributions = document.getElementById('halloweenRetributions')
 const backSapce = document.getElementById('backSapce')
 
 const head = document.querySelector('head')
@@ -42,6 +43,7 @@ function linkGameFunction(link) {
         springRetributions.classList.add('none')
         spaceRetributions.classList.add('none')
         backSapce.classList.add('none')
+        halloweenRetributions.classList.add('none')
     }
     if(link === 'spring') {
         linkGame.innerHTML = `<link rel="stylesheet" href="styles/spring-styles.css">`
@@ -50,6 +52,7 @@ function linkGameFunction(link) {
         springRetributions.classList.remove('none')
         spaceRetributions.classList.add('none')
         backSapce.classList.add('none')
+        halloweenRetributions.classList.add('none')
     }
     if(link === 'space') {
         linkGame.innerHTML = `<link rel="stylesheet" href="styles/space-styles.css">`
@@ -58,9 +61,13 @@ function linkGameFunction(link) {
         spaceRetributions.classList.remove('none')
         backSapce.classList.remove('none')
         springRetributions.classList.add('none')
+        halloweenRetributions.classList.add('none')
     }
-    if(link === 'other') {
-        linkGame.innerHTML = `<link rel="stylesheet" href="styles/other-styles.css">`
+    if(link === 'halloween') {
+        linkGame.innerHTML = `<link rel="stylesheet" href="styles/halloween-styles.css">`
+        firstCard = '<img class="card" src="styles/images/fantasma.svg" alt="">'
+        secondCard = '<img class="card" src="styles/images/pocion.svg" alt="">'
+        halloweenRetributions.classList.remove('none')
         springRetributions.classList.add('none')
         spaceRetributions.classList.add('none')
         backSapce.classList.add('none')
@@ -72,7 +79,7 @@ function deselect() {
     imgClassic.classList.remove('selected-theme')
     imgSpring.classList.remove('selected-theme')
     imgSpace.classList.remove('selected-theme')
-    imgOther.classList.remove('selected-theme')
+    imgHalloween.classList.remove('selected-theme')
 }
 
 function themeSelection(selectedTheme) {
