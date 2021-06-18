@@ -11,6 +11,7 @@ const c9 = document.getElementById('c9')
 const dkImg = document.getElementById('dkImg')
 const winnerMsg = document.getElementById('winnerMsg')
 const btnHomeGame = document.getElementById('btnHomeGame')
+const restart = document.getElementById('restart')
 
 let icon
 let turn = 'first'
@@ -25,7 +26,6 @@ cells.forEach(cell => cell.addEventListener('click', () => {
         checkWinner(winner)
     }
     console.log(turn + ' es tu turno')
-    
 }))
 
 function turnFunction(firstCard, secondCard, winner) {
@@ -76,5 +76,11 @@ btnHomeGame.addEventListener('click', () => {
     game.classList.add('none')
     linkGame.remove()
     play.disabled = true
+    turn = 'first'
+    cells.forEach(cell => cell.innerHTML = '')
+})
+
+restart.addEventListener('click', () => {
+    cells.forEach(cell => cell.innerHTML = '')
     turn = 'first'
 })
