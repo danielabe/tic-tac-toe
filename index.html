@@ -56,12 +56,20 @@
                 <button id="btnHomeGame" class="btn-game">Home <i class="fas fa-home"></i></button>
             </div>
             <div id="dkImg" class="dark-image none">
+                <canvas id="drawing_canvas"></canvas> <!-- esto -->
+                <div id="topModal" class="modal top-modal">
+                    <p class="winner-msg"></p>
+                    <div class="trophy"></div>
+                    <button id="playAgain" class="btn-modal play-again transparent">Play again <i class="fas fa-gamepad"></i></button>
+                    <button id="btnHome" class="btn-modal transparent">Home <i class="fas fa-home"></i></button>
+                </div>
                 <div id="modal" class="modal">
                     <p id="winnerMsg" class="winner-msg"></p>
-                    <img class="trophy" src="styles/images/trophy.png" alt="">
-                    <button class="btn-modal">Play again <i class="fas fa-gamepad"></i></button>
+                    <img class="trophy" src="styles/images/trofeo.svg" alt="">
+                    <button class="btn-modal play-again">Play again <i class="fas fa-gamepad"></i></button>
                     <button class="btn-modal">Home <i class="fas fa-home"></i></button>
                 </div>
+                <div class="retributions">Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
             </div>
             <div id="springRetributions" class="retributions none">
                 <div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
@@ -83,5 +91,6 @@
     </main>
     <script src="main.js"></script>
     <script src="game.js"></script>
+    <script src="confetti.js"></script>
 </body>
 </html>

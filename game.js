@@ -12,6 +12,8 @@ const dkImg = document.getElementById('dkImg')
 const winnerMsg = document.getElementById('winnerMsg')
 const btnHomeGame = document.getElementById('btnHomeGame')
 const restart = document.getElementById('restart')
+const playAgain = document.getElementById('playAgain')
+const btnHome = document.getElementById('btnHome')
 
 let icon
 let turn = 'first'
@@ -72,15 +74,31 @@ function endGame(winner) {
 }
 
 btnHomeGame.addEventListener('click', () => {
+    home()
+})
+
+btnHome.addEventListener('click', () => {
+    home()
+})
+
+function home() {
     coverPage.classList.remove('none')
-    game.classList.add('none')
     linkGame.remove()
+    game.classList.add('none')
+    dkImg.classList.add('none')
+    cells.forEach(cell => cell.innerHTML = '')
     play.disabled = true
     turn = 'first'
-    cells.forEach(cell => cell.innerHTML = '')
-})
+}
 
 restart.addEventListener('click', () => {
     cells.forEach(cell => cell.innerHTML = '')
+    dkImg.classList.add('none')
+    turn = 'first'
+})
+
+playAgain.addEventListener('click', () => {
+    cells.forEach(cell => cell.innerHTML = '')
+    dkImg.classList.add('none')
     turn = 'first'
 })
