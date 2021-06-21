@@ -93,6 +93,15 @@ main {
     color: #AA2B1D;
 }
 
+.form-players{
+    height: 300px;
+    width: 60%;
+    max-width: 300px;
+    min-width: 194px;
+    height: 40%;
+    background: #EF8D32;
+}
+
 .dark-image {
     display: flex;
     align-items: center;
@@ -125,7 +134,7 @@ main {
     background: #CC561E;
     color: #EF8D32;
     font-family: 'Bungee', cursive;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     &:active {
         background: #EF8D32;
         color: #CC561E;
@@ -176,7 +185,7 @@ main {
 .transparent {
     background: transparent;
     color: transparent;
-    z-index: 1;
+    z-index: 3;
 }
 
 .trophy {

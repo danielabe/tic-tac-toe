@@ -55,8 +55,20 @@
                 <button id="restart" class="btn-game">Restart <i class="fas fa-undo-alt"></i></button>
                 <button id="btnHomeGame" class="btn-game">Home <i class="fas fa-home"></i></button>
             </div>
+            <div id="dkImgPlayers" class="dark-image">
+                <form id="firstForm" action="" class="form-players">
+                    <label for="firstPlayer">First player name</label>
+                    <input id="firstPlayer" type="text">
+                    <button id="btnFirstPlayer">Next</button>
+                </form>
+                <form id="secondForm" action="" class="form-players none">
+                    <label for="secondPlayer">Second player name</label>
+                    <input id="secondPlayer" type="text">
+                    <button id="btnSecondtPlayer">Next</button>
+                </form>
+            </div>
             <div id="dkImg" class="dark-image none">
-                <canvas id="drawing_canvas"></canvas> <!-- esto -->
+                <canvas id="drawing_canvas"></canvas>
                 <div id="topModal" class="modal top-modal">
                     <p class="winner-msg"></p>
                     <div class="trophy"></div>

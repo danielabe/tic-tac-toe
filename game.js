@@ -14,9 +14,18 @@ const btnHomeGame = document.getElementById('btnHomeGame')
 const restart = document.getElementById('restart')
 const playAgain = document.getElementById('playAgain')
 const btnHome = document.getElementById('btnHome')
+const btnFirstPlayer = document.getElementById('btnFirstPlayer')
+const btnSecondtPlayer = document.getElementById('btnSecondtPlayer')
+const firstForm = document.getElementById('firstForm')
+const secondForm = document.getElementById('secondForm')
+const firstPlayerInput = document.getElementById('firstPlayer')
+const secondPlayerInput = document.getElementById('secondPlayer')
+const dkImgPlayers = document.getElementById('dkImgPlayers')
 
-let icon
 let turn = 'first'
+let firstPlayer
+let secondPlayer
+let icon
 let winner
 
 cells.forEach(cell => cell.addEventListener('click', () => {
@@ -70,7 +79,8 @@ function checkWinner(winner) {
 
 function endGame(winner) {
     dkImg.classList.remove('none')
-    winnerMsg.innerText = winner + ' you win'
+    if(winner === 'first') winnerMsg.innerText = firstPlayer + ' you win'
+    if(winner === 'second') winnerMsg.innerText = secondPlayer + ' you win'
 }
 
 btnHomeGame.addEventListener('click', () => {
@@ -83,6 +93,8 @@ btnHome.addEventListener('click', () => {
 
 function home() {
     coverPage.classList.remove('none')
+    dkImgPlayers.classList.remove('none')
+    firstForm.classList.remove('none')
     linkGame.remove()
     game.classList.add('none')
     dkImg.classList.add('none')
@@ -101,4 +113,18 @@ playAgain.addEventListener('click', () => {
     cells.forEach(cell => cell.innerHTML = '')
     dkImg.classList.add('none')
     turn = 'first'
+})
+
+btnFirstPlayer.addEventListener('click', (event) => {
+    event.preventDefault()
+    firstForm.classList.add('none')
+    secondForm.classList.remove('none')
+    firstPlayer = firstPlayerInput.value
+})
+
+btnSecondtPlayer.addEventListener('click', (event) => {
+    event.preventDefault()
+    secondForm.classList.add('none')
+    dkImgPlayers.classList.add('none')
+    secondPlayer = secondPlayerInput.value
 })
