@@ -101,6 +101,8 @@ function home() {
     cells.forEach(cell => cell.innerHTML = '')
     play.disabled = true
     turn = 'first'
+    firstPlayerInput.value = ''
+    secondPlayerInput.value = ''
 }
 
 restart.addEventListener('click', () => {
@@ -117,14 +119,18 @@ playAgain.addEventListener('click', () => {
 
 btnFirstPlayer.addEventListener('click', (event) => {
     event.preventDefault()
-    firstForm.classList.add('none')
-    secondForm.classList.remove('none')
-    firstPlayer = firstPlayerInput.value
+    if(firstPlayerInput.value !== '') {
+        firstForm.classList.add('none')
+        secondForm.classList.remove('none')
+        firstPlayer = firstPlayerInput.value
+    }
 })
 
 btnSecondtPlayer.addEventListener('click', (event) => {
     event.preventDefault()
-    secondForm.classList.add('none')
-    dkImgPlayers.classList.add('none')
-    secondPlayer = secondPlayerInput.value
+    if(secondPlayerInput.value !== '') {
+        secondForm.classList.add('none')
+        dkImgPlayers.classList.add('none')
+        secondPlayer = secondPlayerInput.value
+    }
 })
