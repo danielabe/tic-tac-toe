@@ -65,7 +65,7 @@ main {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 0 50px 0;
+  height: 100vh;
   background: transparent;
 }
 
@@ -76,8 +76,6 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
-  bottom: 60px;
   width: 95%;
 }
 
@@ -100,8 +98,6 @@ main {
 
 .retributions {
   width: 95%;
-  position: absolute;
-  bottom: 4px;
   text-align: center;
   font-size: 10px;
   color: #fff8f0;

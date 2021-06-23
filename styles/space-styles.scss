@@ -44,7 +44,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    padding: 0 0 50px 0;
+    height: 100vh;
     background: linear-gradient(135deg, rgba(100,173,70,1) 0%, rgba(94,162,66,1) 50%, rgba(87,150,61,1) 100%);
     background: transparent;
 }
@@ -52,8 +52,6 @@ main {
 .btns-game {
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    bottom: 60px;
     width: 95%;
     z-index: 2;
 }
@@ -75,8 +73,6 @@ main {
 
 .retributions {
     width: 95%;
-    position: absolute;
-    bottom: 4px;
     z-index: 1;
     text-align: center;
     font-size: 10px;

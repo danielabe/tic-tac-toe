@@ -134,6 +134,7 @@ main {
 
 .dark-image {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     position: absolute;
@@ -200,7 +201,7 @@ main {
     margin: auto;
     width: 100vw;
     height: 350px;
-    top: -110px;
+    top: -300px;
     bottom: 0;
     /* left: -40px; */
     right: 0;
@@ -209,6 +210,7 @@ main {
 
 .top-modal {
     position: absolute;
+    top: 84px;
     background: transparent;
 }
 
