@@ -23,7 +23,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
+  height: 100%;
   background: #fff8f0;
 }
 
@@ -78,7 +78,8 @@ main {
 }
 
 .select-title {
-  margin: 20px 0;
+  margin: 30px 0 20px 0;
+  font-size: 20px;
   text-align: center;
   color: #BECA5C;
 }
@@ -86,9 +87,9 @@ main {
 .themes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 55% 55%;
+  -ms-grid-rows: 60% 60%;
   -ms-grid-columns: 0.5fr 0.5fr;
-      grid-template: 55% 55%/0.5fr 0.5fr;
+      grid-template: 60% 60%/0.5fr 0.5fr;
   width: 80vmin;
 }
 
@@ -188,7 +189,7 @@ main {
       justify-content: space-around;
   position: absolute;
   top: 0;
-  height: 100vh;
+  height: 100%;
   z-index: 2;
   background: rgba(0, 0, 0, 0.8);
 }
