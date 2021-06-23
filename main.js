@@ -12,12 +12,14 @@ const spaceRetributions = document.getElementById('spaceRetributions')
 const halloweenRetributions = document.getElementById('halloweenRetributions')
 const backSapce = document.getElementById('backSapce')
 
+const main = document.querySelector('main')
 const head = document.querySelector('head')
 const themes = document.querySelectorAll('.theme')
 
 let firstCard
 let secondCard
 
+const height = window.innerHeight
 let selectedTheme = null
 
 const linkGame = document.createElement('link')
@@ -96,3 +98,12 @@ play.addEventListener('click', () => {
     deselect()
 })
 
+//obtener height
+
+function getHeight() {
+    main.style.height = height 
+    select.style.height = height
+    dkImgPlayers.style.height = height
+}
+
+getHeight()
