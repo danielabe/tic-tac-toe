@@ -101,9 +101,9 @@ play.addEventListener('click', () => {
 //obtener height
 
 function getHeight() {
-    main.style.height = height 
-    select.style.height = height
-    dkImgPlayers.style.height = height
+    main.style.height = height + 'px'
+    select.style.height = height + 'px'
+    dkImgPlayers.style.height = height + 'px'
 }
 
 getHeight()
