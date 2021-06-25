@@ -10,7 +10,8 @@ const imgHalloween = document.getElementById('imgHalloween')
 const springRetributions = document.getElementById('springRetributions')
 const spaceRetributions = document.getElementById('spaceRetributions')
 const halloweenRetributions = document.getElementById('halloweenRetributions')
-const backSapce = document.getElementById('backSapce')
+const backSpace = document.getElementById('backSpace')
+const spaceImg = document.getElementById('spaceImg')
 
 const main = document.querySelector('main')
 const head = document.querySelector('head')
@@ -44,7 +45,7 @@ function linkGameFunction(link) {
         secondCard = '<img class="card" src="styles/images/trip_origin.svg" alt="">'
         springRetributions.classList.add('none')
         spaceRetributions.classList.add('none')
-        backSapce.classList.add('none')
+        backSpace.classList.add('none')
         halloweenRetributions.classList.add('none')
     }
     if(link === 'spring') {
@@ -53,7 +54,7 @@ function linkGameFunction(link) {
         secondCard = '<img class="card" src="styles/images/sakura.png" alt="">'
         springRetributions.classList.remove('none')
         spaceRetributions.classList.add('none')
-        backSapce.classList.add('none')
+        backSpace.classList.add('none')
         halloweenRetributions.classList.add('none')
     }
     if(link === 'space') {
@@ -61,7 +62,7 @@ function linkGameFunction(link) {
         firstCard = '<img class="card" src="styles/images/lanzadera.png" alt="">'
         secondCard = '<img class="card" src="styles/images/saturno.png" alt="">'
         spaceRetributions.classList.remove('none')
-        backSapce.classList.remove('none')
+        backSpace.classList.remove('none')
         springRetributions.classList.add('none')
         halloweenRetributions.classList.add('none')
     }
@@ -72,7 +73,7 @@ function linkGameFunction(link) {
         halloweenRetributions.classList.remove('none')
         springRetributions.classList.add('none')
         spaceRetributions.classList.add('none')
-        backSapce.classList.add('none')
+        backSpace.classList.add('none')
     }
 
 }
@@ -104,6 +105,7 @@ function getHeight() {
     main.style.height = height + 'px'
     select.style.height = height + 'px'
     dkImgPlayers.style.height = height + 'px'
+    spaceImg.style.height = height + 'px'
 }
 
 getHeight()
