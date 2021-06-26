@@ -12,6 +12,7 @@ const spaceRetributions = document.getElementById('spaceRetributions')
 const halloweenRetributions = document.getElementById('halloweenRetributions')
 const backSpace = document.getElementById('backSpace')
 const spaceImg = document.getElementById('spaceImg')
+const violet = document.getElementById('violet')
 
 const main = document.querySelector('main')
 const head = document.querySelector('head')
@@ -106,6 +107,8 @@ function getHeight() {
     select.style.height = height + 'px'
     dkImgPlayers.style.height = height + 'px'
     spaceImg.style.height = height + 'px'
+    dkImg.style.height = height + 'px'
+    violet.style.height = height + 'px'
 }
 
 getHeight()
